@@ -1,0 +1,144 @@
+{
+    // === UI and Theme Settings ===
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Alt Catppuccin Mocha",
+    "window.zoomLevel": 0.5,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on",
+    "editor.lineNumbers": "relative",
+    "breadcrumbs.enabled": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "window.menuBarVisibility": "compact",
+    "vsicons.dontShowNewVersionMessage": true,
+
+    // === Font Settings ===
+    "editor.fontFamily": "\"JetBrainsMono Nerd Font Mono\"",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+
+    // === Formatting and Editing ===
+    "editor.formatOnSave": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.linkedEditing": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    // === File and Launch Settings ===
+    "launch": {},
+    "[json]": {},
+    "[plaintext]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false
+    },
+
+    // === VIM Settings ===
+    "vim.leader": "<Space>", // Sets the leader key to Space.
+    "vim.useSystemClipboard": true, // Enables using the system clipboard for copy/paste actions.
+    "vim.hlsearch": true, // Highlights all search matches.
+    "vim.ignorecase": true, // Makes searches case-insensitive.
+    "vim.smartcase": true, // Makes searches case-sensitive if the search includes uppercase letters.
+    "vim.incsearch": true, // Shows search results incrementally as you type.
+    "vim.autoindent": true, // Enables automatic indentation.
+    "vim.surround": true, // Enables support for surround operations using the `vim-surround` plugin.
+    "vim.easymotion": true, // Enables EasyMotion functionality for quick cursor movements.
+    "vim.replaceWithRegister": true, // Enables replacing text with content from a register.
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["i", "i"], // Maps `ii` in insert mode to exit to normal mode.
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "w"], // Save file.
+            "commands": ["workbench.action.files.save"]
+        },
+        {
+            "before": ["<leader>", "q"], // Close active editor.
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
+            "before": ["<leader>", "f"], // Open file.
+            "commands": ["workbench.action.files.openFile"]
+        },
+        {
+            "before": ["<C-h>"], // Focus left editor group.
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            "before": ["<C-j>"], // Focus below editor group.
+            "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+            "before": ["<C-k>"], // Focus above editor group.
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["<C-l>"], // Focus right editor group.
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+        {
+            "before": ["<leader>", "v"], // Split editor vertically.
+            "commands": ["workbench.action.splitEditorRight"]
+        },
+        {
+            "before": ["<leader>", "b"], // Split editor horizontally.
+            "commands": ["workbench.action.splitEditorDown"]
+        },
+        {
+            "before": ["<leader>", "s"], // Save all files.
+            "commands": ["workbench.action.files.saveAll"]
+        },
+        {
+            "before": ["<leader>", "x"], // Kill terminal.
+            "commands": ["workbench.action.terminal.kill"]
+        },
+        {
+            "before": ["<leader>", "t"], // Open new terminal.
+            "commands": ["workbench.action.terminal.new"]
+        },
+        {
+            "before": ["<leader>", "y"], // Copy line down.
+            "commands": ["editor.action.copyLinesDownAction"]
+        },
+        {
+            "before": ["<leader>", "p"], // Copy line up.
+            "commands": ["editor.action.copyLinesUpAction"]
+        },
+        {
+            "before": ["J"], // Move line down.
+            "commands": ["editor.action.moveLinesDownAction"]
+        },
+        {
+            "before": ["K"], // Move line up.
+            "commands": ["editor.action.moveLinesUpAction"]
+        },
+        {
+            "before": ["<leader>", "c", "a"], // Quick fix.
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            "before": ["g", "h"], // Show definition preview hover.
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
+        {
+            "before": ["<leader>", "g"], // Go to next diff.
+            "commands": ["editor.action.dirtydiff.next"]
+        },
+        {
+            "before": ["<leader>", "r"], // Go to previous diff.
+            "commands": ["editor.action.dirtydiff.previous"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "u"], // Transform to uppercase.
+            "commands": ["editor.action.transformToUppercase"]
+        },
+        {
+            "before": ["<leader>", "l"], // Transform to lowercase.
+            "commands": ["editor.action.transformToLowercase"]
+        }
+    ]
+}
